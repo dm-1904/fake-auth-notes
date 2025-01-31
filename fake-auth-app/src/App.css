@@ -1,42 +1,52 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  margin: 0 auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.card-container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-container h1 {
+  font-size: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.movie-card {
+  border: 1px solid white;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.card {
-  padding: 2em;
+.movie-card button {
+  background-color: darkgray;
 }
 
-.read-the-docs {
-  color: #888;
+.fav {
+  margin-top: 50px;
+  height: 100px;
+  width: 100px;
+  font-size: 50px;
+}
+
+.sign-up-box,
+.log-in-box {
+  height: 40px;
+}
+
+.create-account,
+.log-in {
+  width: 150px;
+  padding: 10px 0 10px 0;
+}
+
+.user-name,
+.password,
+.user-login {
+  height: 70%;
 }
